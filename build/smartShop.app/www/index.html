@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>App Demos</title>
+	<!-- meta info -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<!-- icon  -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="front_assets/icon/icon-57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="front_assets/icon/icon-72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="front_assets/icon/icon-114.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="front_assets/icon/icon-144.png" />
+	<!-- startup img -->
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" />
+	<link rel="apple-touch-startup-image" sizes="768x1004" href="apple-touch-startup-image-768x1004.png" />
+	<!-- the css  -->
+	<!-- custom css -->
+	<link rel="stylesheet" href="front_assets/css/custom.css">
+	<link rel="stylesheet" href="front_assets/css/custom_jqm.css">
+
+
+	<!--bootstrap css -->
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-media.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-type.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-form.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-carousel.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-buttons.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-buttons-group.css">
+	<link rel="stylesheet" href="front_assets/css/custom_tb.css">
+
+	<!-- jquery mobile css -->
+	<link rel="stylesheet" href="front_assets/css/swatch_g.css">
+	<link rel="stylesheet" href="front_assets/css/swatch_l.css">
+	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.structure.css">
+	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.theme.css">
+
+	<script src="front_assets/tool/jquery/jquery.js"></script>
+	<script src="front_assets/tool/bootstrap/js/bootstrap.js"></script>
+	<script src="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.js"></script>
+</head>
+<body>
+	<section id="page_loading1" class="loading-page" data-role="page" >
+
+		<article data-role="content" >
+			<a class="loading-btn" href="#page_loading2" data-transition="slide"><img src="front_assets/img_basic/loading/loading-logo.png" /></a>
+		</article><!-- /content -->
+	</section><!-- /page -->
+	<section id="page_loading2" data-role="page" class="loading-page">
+
+		<article data-role="content" >
+			<a class="loading-btn" href="#page_login"  data-transition="pop"><img src="front_assets/img_basic/loading/loading2-logo.png" /></a>
+		</article><!-- /content -->
+	</section><!-- /page -->
+	<div id="page_login"  data-role="page" class="jqm-demos jqm-demos-home"  >
+
+		<div data-role="header" class=" ui-header navbar-inner" data-theme="i">
+			<h1 >
+				<img class="logo_text" src="front_assets/img_basic/logo/logo_text.png" alt="jQuery Mobile Framework">
+		<!-- 		<a href="#" style="color:#999;">
+					<span style=""><span style="color:#60a725;">$</sapn>mart</span>
+					</span><span ><span style="color:#07ade0;">$</span>shop</span></span>
+				</a>	 -->	
+			</h1>
+
+			<!-- <a href="#" class="jqm-search-link ui-btn-right" data-icon="search" data-iconpos="notext">Search</a> -->
+		</div><!-- /header -->
+
+		<div data-role="content" >
+
+			<div class="content-wrapper">
+				<div class="login-welcome">
+					<img class="logo_login" src="front_assets/img_basic/logo/logo_login.png" alt="jQuery Mobile Framework">
+					<!-- <h3 class="jqm-intro" style="margin-top:15px;margin-bottom:15px;">智市,你身边的移动服务集市。</h3>	 -->
+				</div>
+				<form>
+				    <ul data-role="listview" data-theme="d" data-inset="true">
+				        <li data-role="fieldcontain">
+				            <!-- <label for="name2" style="color:#60a725;">Email:</label> -->
+				            <input type="text" name="name2" id="name2" value="" data-clear-btn="true" placeholder="Email">
+				        </li>
+						<li data-role="fieldcontain">
+						    <!-- <label for="name2" style="color:#60a725;">Password:</label> -->
+						    <input type="password" name="name2" id="name2" value="" data-clear-btn="true" placeholder="Password">
+						</li>
+				
+				    </ul>
+				</form>
+				
+				<a href="home.html" data-role="button" data-theme="l" style="margin-top:-10px;">登录</a>
+			</div>
+
+
+		</div><!-- /content -->
+
+		<div data-role="footer" data-position="fixed" data-theme="i">
+			<fieldset class="ui-grid-a">
+		        <div class="ui-block-a"><a type="submit" data-theme="l" href="examples"  data-mini="false" data-transition="pop">注册新用户</a></div>
+		        <div class="ui-block-b"><a type="submit" data-theme="g" href="register.php" data-mini="false" data-transition="slide">快捷方式登录</a></div>
+			</fieldset>
+		</div><!-- /jqm-footer -->
+	</div>
+</body>
+</html>

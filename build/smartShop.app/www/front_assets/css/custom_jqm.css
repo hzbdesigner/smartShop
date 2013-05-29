@@ -1,0 +1,136 @@
+
+
+.nav-list-divider{
+	background-color: transparent !important;
+	line-height: 20px !important;
+	height: 20px !important;
+	padding:5px !important;
+	color:#6fbe48;
+
+}
+/*structure*/
+.ui-content{padding:0px !important;}
+.ui-body-c,.ui-overlay-c {border: none !important;}
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li { padding: .6em 10px !important; display: block;color:#999; }
+.ui-li-thumb, .ui-listview .ui-li-icon {  left: 0px !important;  }
+.ui-content .ui-listview-inset, .ui-panel-inner .ui-listview-inset { margin: 0.5em 0; }
+.ui-input-search, div.ui-input-text { margin: .5em 0; background-image: none; position: relative;border: 1px solid #ddd; }
+
+.ui-collapsible-content {
+	display: block;
+	/*margin: 0 -15px;	*/
+	/*padding: 10px 15px;*/
+	margin: 0 !important;
+	padding: 0 !important;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-top: none;      /* Overrides ui-body-* */
+	background-image: none; /* Overrides ui-body-* */
+}
+.ui-collapsible-content .ui-listview-inset { margin:0 0 1em 0 !important; }
+/*panel 大小 对17em进行替换~一般280-290适合~*/
+
+ /*custom theme css*/
+.ui-corner-all {
+	-webkit-border-radius: 				4px !important;
+	border-radius: 						4px !important;
+}
+ .ui-btn-corner-all{border-radius: 4px !important;}
+ /*tabbar navbar height 49px*/
+ .ui-navbar li .ui-btn-icon-top .ui-btn-inner { padding-top: 26px !important; padding-bottom: 3px !important;} 
+ .ui-header .ui-title, .ui-footer .ui-title { 
+ 	height: 44px; 
+ 	line-height: 44px;
+ 	text-align: center; 
+ 	font-size: 16px;
+ 	 display: block; 
+ 	 margin: 0 !important; 
+ 	 padding: 0; 
+ 	 text-overflow: ellipsis; 
+ 	 overflow: hidden; 
+ 	 white-space: nowrap; 
+ 	 outline: 0 !important; 
+ 	}
+ .ui-header .ui-title{
+  color:#776b5d;
+ }
+
+
+/*btn list shadow*/
+ .ui-shadow {
+	-moz-box-shadow: 0 1px 2px /*{global-box-shadow-size}*/ 			rgba(0,0,0,.15) /*{global-box-shadow-color}*/ !important;
+	-webkit-box-shadow: 0 1px 2px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.15) /*{global-box-shadow-color}*/!important;
+	box-shadow: 0 1px 2px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.15) /*{global-box-shadow-color}*/!important;
+}
+/*form input shadow*/
+.ui-shadow-inset {
+	-moz-box-shadow: none 		!important;
+	-webkit-box-shadow: none 	!important;
+	box-shadow: none 			!important;
+}
+
+/*swatch css*/
+.ui-btn-up-c {
+	border: 1px solid   #eee /*{c-bup-border}*/ !important;
+
+}
+.ui-bar-c{
+	border: none !important;
+}
+.ui-btn-hover-c {
+	border: 1px solid 		#eee !important /*{c-bhover-border}*/;
+	background: 			#eee !important /*{c-bhover-background-color}*/;
+	font-weight: bold;
+	color: 					#222 /*{c-bhover-color}*/;
+	text-shadow: 0 /*{c-bhover-shadow-x}*/ 1px /*{c-bhover-shadow-y}*/ 0 /*{c-bhover-shadow-radius}*/ #fff /*{c-bhover-shadow-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #f6f6f6 /*{c-bhover-background-start}*/), to( #e0e0e0 /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/);
+}
+.ui-btn-up-d {
+	border: none !important;
+	border-bottom: 1px solid 		#eee !important;
+	background: 			#fff !important;
+}
+.ui-btn-hover-d {
+	border: none !important;
+	border-bottom: 1px solid 		#ddd !important;
+	background: 			#fff !important;
+}
+*[data-theme="l"] .ui-btn-inner {
+/*	border-top: 1px solid 	#fff;
+	border-color: 			rgba(255,255,255,.3);*/
+	border: none !important;
+}
+*[data-theme="g"] .ui-btn-inner {
+/*	border-top: 1px solid 	#fff;
+	border-color: 			rgba(255,255,255,.3);*/
+	border: none !important;
+}
+ /* Active class used as the "on" state across all themes
+-----------------------------------------------------------------------------------------------------------*/
+.ui-btn-active {
+	border: 1px solid 		#23a9d2 !important ;
+	background: 			#23a9d2 !important;
+	font-weight: bold;
+	color: 					#fff  !important;
+	cursor: pointer;
+	text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 0 /*{global-active-shadow-radius}*/ #3373a5 /*{global-active-shadow-color}*/;
+	text-decoration: none;
+}
+.ui-btn-active *{color: #fff !important;}
+.ui-btn-active:visited,
+.ui-btn-active:hover,
+.ui-btn-active a.ui-link-inherit {
+	color: 					#fff  !important;
+}
+
+
+/*form*/
+.ui-body-c,
+.ui-overlay-c {
+	border: none !important;
+}

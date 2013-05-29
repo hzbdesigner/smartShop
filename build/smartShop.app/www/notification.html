@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- manifest="cache.manifest" -->
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>App Demos</title>
+	<!-- meta info -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<!-- icon  -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="front_assets/icon/icon-57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="front_assets/icon/icon-72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="front_assets/icon/icon-114.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="front_assets/icon/icon-144.png" />
+	<!-- startup img -->
+	<link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" />
+	<link rel="apple-touch-startup-image" sizes="768x1004" href="apple-touch-startup-image-768x1004.png" />
+	<!-- the css  -->
+	<!-- custom css -->
+	<link rel="stylesheet" href="front_assets/css/custom.css">
+	<link rel="stylesheet" href="front_assets/css/custom_jqm.css">
+
+
+	<!--bootstrap css -->
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-media.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-type.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-form.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-carousel.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-buttons.css">
+	<link rel="stylesheet" href="front_assets/tool/bootstrap/css/bootstrap-buttons-group.css">
+	<link rel="stylesheet" href="front_assets/css/custom_tb.css">
+
+	<!-- jquery mobile css -->
+	<link rel="stylesheet" href="front_assets/css/swatch_g.css">
+	<link rel="stylesheet" href="front_assets/css/swatch_l.css">
+	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.structure.css">
+	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.theme.css">
+
+	<script src="front_assets/tool/jquery/jquery.js"></script>
+	<script src="front_assets/tool/bootstrap/js/bootstrap.js"></script>
+	<script src="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.js"></script>
+</head>
+<body>
+	<div data-role="page" >
+		<div data-role="header" class=" ui-header navbar-inner" data-theme="i">
+			<!-- <a href="#faxian" data-icon="grid" class="ui-btn-active" data-toggle="tab">发现</a> -->
+			<!-- <a href="#nav-panel" data-icon="bars" data-iconpos="notext" data-theme="c" data-iconshadow="false">Navigation</a> -->
+			<div class="navbar-btn left"><a href="#nav-panel"><i class="icon icon-list icon-white"></i></a><span class="divider"></span></div>
+			<!-- <a href="#"  data-icon="plus" data-iconpos="notext" data-theme="c" data-transition="slide">Add Post</a> -->
+			<h1>
+				<div class="btn-group" >
+		          <a class="btn active btn-ss-blue navbar-group" href="#quanbu" data-toggle="tab" style="color:#fff;">已&nbsp;读</a>
+		          <a class="btn btn-ss-blue navbar-group" href="#fenlei" data-toggle="tab" style="color:#fff;">未&nbsp;读</a>
+				</div>
+				<script type="text/javascript">
+					$(function () {
+						$('.navbar-group').click(function (e) {
+							e.preventDefault();
+							// $(this).toggleClass("active");
+
+							$(this).addClass('active').siblings().removeClass('active');
+						
+						});
+					});
+				</script>
+
+			</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<fieldset class="ui-grid-a" style="padding:5px 5px 0px 5px;">
+		        <div class="ui-block-a"><a type="submit" data-theme="l" href="examples"  data-mini="false" data-transition="pop">全部标记为已读</a></div>
+		        <div class="ui-block-b"><a type="submit" data-theme="g" href="register.php" data-mini="false" data-transition="slide">全部清空</a></div>
+			</fieldset>
+			<div style="padding:10px;padding-top:0px;">
+
+				<ul data-role="listview" data-inset="true">
+				    <li>
+				    	<a href="#">
+							<div class="list-wrapper">
+								<div class="avatar">
+									<img  src="front_assets/img_content/avatar/avatar3.jpg" />
+								</div>
+								<div class="content">
+									<h3>SmartShop官方<span>2013-05-12</span></h3>
+									<p>最新版本已更新，各位智友赶快赶快升级体验哈~</p>
+								</div>
+							</div>
+				   		</a>
+				    </li>
+				</ul>
+				<ul data-role="listview" data-inset="true">
+				    <li>
+				    	<a href="#">
+							<div class="list-wrapper">
+								<div class="avatar">
+									<img  src="front_assets/img_content/avatar/avatar2.jpg" />
+								</div>
+								<div class="content">
+									<h3>张三<span>2013-05-12</span></h3>
+									<p>最新版本已更新，各位智友赶快赶快升级体验哈~</p>
+								</div>
+							</div>
+				   		</a>
+				    </li>
+				</ul>
+
+			</div>
+	  	</div><!-- /content -->
+
+
+
+		    <div data-role="footer" data-position="fixed">
+		        <div data-role="navbar">
+		            <ul>
+		                <li><a href="#faxian" data-icon="grid" class="ui-btn-active" data-toggle="tab">系统通知</a></li>
+		                <li><a href="#fujin" data-icon="star" data-toggle="tab">聊天留言</a></li>
+		                <li><a href="#shoucang" data-icon="gear"  data-toggle="tab">交易信息</a></li>
+		            </ul>
+		        </div><!-- /navbar -->
+			</div><!-- /footer --> 
+
+			    <div  data-role="panel" id="nav-panel" data-position="left" data-display="reveal" data-theme="c">
+			        <ul data-role="listview" data-inset="true" style="margin-top:-5px !important;margin-bottom:10px;" data-theme="a">
+			            <li><a href="me.html" data-transition="slide">
+			                <img  src="front_assets/img_content/avatar/avatar1.jpg" >
+			                <h2>侯宗保</h2>
+			                <p>北京科技大学 &nbsp; 机械工程学院</p></a>
+			            </li>
+			        </ul>
+			        <ul data-role="listview" data-theme="d" data-divider-theme="d"  data-global-nav="demos" class="jqm-list" style="margin-top:0px">
+
+			            <li data-role="list-divider" class="nav-list-divider" data-theme="i">Center交易广场</li>
+						<li><a href="home.html" data-transition="slide" >发现</a></li>
+			            <li><a href="home.html" data-transition="slide">附近</a></li>
+			             <li><a href="home.html" data-transition="slide">收藏</a></li>
+			            <li data-role="list-divider" data-transition="slide" class="nav-list-divider" data-theme="i">Post发布信息</li>
+			            <li><a href="post.html" data-transition="slide">发布需求</a></li>
+			            <li><a href="post.html" data-transition="slide">出售服务</a></li>
+
+			        </ul>
+			        <div class="ui-grid-a" style="margin-top:40px;">
+			            <div class="ui-block-a"><a type="submit" data-theme="l" href="notification.html" data-transition="slide" >消息<span class="badge" style="background: #fff;color:#aaa;">1</span></a></div>
+			            <div class="ui-block-b"><a type="submit" data-theme="g" href="setting.html" data-transition="slide" >设置</a></div>
+			        </div>
+				</div><!-- /panel -->
+	</div><!-- /page -->
+</body>
+</html>

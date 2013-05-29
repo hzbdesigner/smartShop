@@ -1,0 +1,67 @@
+/*buttons swatch*/
+/*swatch ss blue*/
+/*一个button的border和bg的颜色之间的关系~*/
+.btn-ss-blue {
+  color: #fff ;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #23a9d2;
+  *background-color: #00a0d1;
+  background-image: -moz-linear-gradient(top, #23a9d2, #00a0d1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23a9d2), to(#00a0d1));
+  background-image: -webkit-linear-gradient(top, #23a9d2, #00a0d1);
+  background-image: -o-linear-gradient(top, #23a9d2, #00a0d1);
+  background-image: linear-gradient(to bottom, #23a9d2, #00a0d1);
+  background-repeat: repeat-x;
+  border-color: #00a0d1 #00a0d1 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff23a9d2', endColorstr='#ff00a0d1', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-ss-blue:hover,
+.btn-ss-blue:focus,
+.btn-ss-blue:active,
+.btn-ss-blue.active,
+.btn-ss-blue.disabled,
+.btn-ss-blue[disabled] {
+  color: #ffffff;
+  background-color: #00a0d1;
+  *background-color: #499249;
+}
+
+/*btn-group*/
+.btn-group.open .btn-ss-blue.dropdown-toggle {
+  background-color: #00a0d1;
+
+}
+.btn-ss-blue .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+
+/*tb form*/
+textarea {
+  height: auto;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
