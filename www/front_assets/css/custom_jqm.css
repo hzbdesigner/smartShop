@@ -12,6 +12,7 @@
 .ui-content{padding:0px !important;}
 .ui-body-c,.ui-overlay-c {border: none !important;}
 .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li { padding: .6em 10px !important; display: block;color:#999; }
+.ui-li .ui-btn-inner a.ui-link-inherit[data-role="divider"], .ui-li-static.ui-li[data-role="divider"]{color: #fff;}
 .ui-li-thumb, .ui-listview .ui-li-icon {  left: 0px !important;  }
 .ui-content .ui-listview-inset, .ui-panel-inner .ui-listview-inset { margin: 0.5em 0; }
 .ui-input-search, div.ui-input-text { margin: .5em 0; background-image: none; position: relative;border: 1px solid #ddd; }
@@ -54,6 +55,10 @@
  .ui-header .ui-title{
   color:#776b5d;
  }
+ .ui-body-d,
+.ui-overlay-d {
+	border: none !important;
+}
 
 
 /*btn list shadow*/
@@ -116,7 +121,7 @@
  /* Active class used as the "on" state across all themes
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-active {
-	border: 1px solid 		#23a9d2 !important ;
+	border: none !important ;
 	background: 			#23a9d2 !important;
 	font-weight: bold;
 	color: 					#fff  !important;

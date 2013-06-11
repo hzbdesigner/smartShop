@@ -1,16 +1,20 @@
 CACHE MANIFEST
  
-#version 5291120
+#version 6051307
 
 CACHE:
 
 #views
 index.html
+signup.html
+social-login.html
+subcate.html
 home.html
 detail.html
 me.html
 navigation.html
 notification.html
+notification-detail.html
 post.html
 setting.html
 
@@ -57,6 +61,28 @@ front_assets/tool/jquery.mobile.custom/images/icons-18-white.png
 front_assets/tool/jquery.mobile.custom/images/icons-36-black.png
 front_assets/tool/jquery.mobile.custom/images/icons-36-white.png
 
+#jqm_icons
+
+front_assets/tool/jqm_icons/font-awesome/jqm-icon-pack-3.0.0-fa.css
+front_assets/tool/jqm_icons/font-awesome/font/fontawesome-webfont.eot
+front_assets/tool/jqm_icons/font-awesome/font/fontawesome-webfont.svg
+front_assets/tool/jqm_icons/font-awesome/font/fontawesome-webfont.ttf
+front_assets/tool/jqm_icons/font-awesome/font/fontawesome-webfont.woff
+front_assets/tool/jqm_icons/font-awesome/font/FontAwesome.otf
+front_assets/tool/jqm_icons/font-awesome/faicons-v2.png
+front_assets/tool/jqm_icons/font-awesome/faicons.png
+front_assets/tool/jqm_icons/font-awesome/images/icons-18-black-pack.png
+front_assets/tool/jqm_icons/font-awesome/images/icons-18-white-pack.png
+front_assets/tool/jqm_icons/font-awesome/images/icons-36-black-pack.png
+front_assets/tool/jqm_icons/font-awesome/images/icons-36-white-pack.png
+
+front_assets/tool/jqm_icons/original/jqm-icon-pack-2.0-original.css
+front_assets/tool/jqm_icons/original/images/icons-18-black-pack.png
+front_assets/tool/jqm_icons/original/images/icons-18-white-pack.png
+front_assets/tool/jqm_icons/original/images/icons-36-black-pack.png
+front_assets/tool/jqm_icons/original/images/icons-36-white-pack.png
+
+###########other assets
 #img
 #imgbasic
 front_assets/img_basic/loading/loading-logo.png
@@ -66,7 +92,7 @@ front_assets/img_basic/bg/bg@2x.png
 front_assets/img_basic/logo/logo_login.png
 front_assets/img_basic/logo/logo_text.png
 front_assets/img_basic/me/me-slide-bg.jpg
-
+front_assets/img_basic/navigation/nav-me-bg.png
 #imgcontent
 #slide
 front_assets/img_content/slide/slide1.jpg
@@ -74,9 +100,12 @@ front_assets/img_content/slide/slide2.jpg
 front_assets/img_content/slide/slide3.jpg
 
 #avatar
+front_assets/img_content/avatar/avatar-me.jpg
 front_assets/img_content/avatar/avatar1.jpg
 front_assets/img_content/avatar/avatar2.jpg
 front_assets/img_content/avatar/avatar3.jpg
+front_assets/img_content/avatar/avatar4.jpg
+front_assets/img_content/avatar/avatar5.jpg
 
 #icon
 front_assets/icon/icon-114.png

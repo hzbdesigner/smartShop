@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- manifest="cache.manifest" -->
-<html manifest="cache.manifest">
+<html >
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,6 +40,9 @@
 	<link rel="stylesheet" href="front_assets/css/swatch_l.css">
 	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.structure.css">
 	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.theme.css">
+	<!-- jqm extend icons -->
+	<link rel="stylesheet" href="front_assets/tool/jqm_icons/font-awesome/jqm-icon-pack-3.0.0-fa.css">
+	<link rel="stylesheet" href="front_assets/tool/jqm_icons/original/jqm-icon-pack-2.0-original.css">
 
 	<!-- icon css -->
 	<link rel="stylesheet" href="front_assets/tool/font-awesome/css/font-awesome.css">
@@ -115,14 +118,14 @@
           			<span class="label">120人浏览</span> <span class="label label-info">5人参与</span> <span class="label label-success ">4人分享</span> <span class="label label-important">20人收藏</span>
           			<ul data-role="listview" data-inset="true">
           			    <li>
-          			    	<a href="#">
+          			    	<a href="notification-detail.html" data-transition="slide">
           						<div class="list-wrapper">
           							<div class="avatar">
           								<img  src="front_assets/img_content/avatar/avatar2.jpg" />
           							</div>
           							<div class="content">
-          								<h3>张三<span>2013-05-12</span></h3>
-          								<p>最新版本已更新，各位智友赶快赶快升级体验哈~</p>
+          								<h3>李四<span>2013-05-12</span></h3>
+          								<p>[分享到]微博：”哇哦~大家都来看看哈“</p>
           							</div>
           						</div>
           			   		</a>
@@ -130,14 +133,29 @@
           			</ul>
           			<ul data-role="listview" data-inset="true">
           			    <li>
-          			    	<a href="#">
+          			    	<a href="notification-detail.html" data-transition="slide">
           						<div class="list-wrapper">
           							<div class="avatar">
-          								<img  src="front_assets/img_content/avatar/avatar2.jpg" />
+          								<img  src="front_assets/img_content/avatar/avatar3.jpg" />
           							</div>
           							<div class="content">
           								<h3>张三<span>2013-05-12</span></h3>
-          								<p>最新版本已更新，各位智友赶快赶快升级体验哈~</p>
+          								<p>[报名]参与本需求悬赏:"你好，我想……"</p>
+          							</div>
+          						</div>
+          			   		</a>
+          			    </li>
+          			</ul>
+          			<ul data-role="listview" data-inset="true">
+          			    <li>
+          			    	<a href="notification-detail.html" data-transition="slide">
+          						<div class="list-wrapper">
+          							<div class="avatar">
+          								<img  src="front_assets/img_content/avatar/avatar4.jpg" />
+          							</div>
+          							<div class="content">
+          								<h3>王五<span>2013-05-12</span></h3>
+          								<p>[有类似需求]：”同求啊~我也需要这个~“</p>
           							</div>
           						</div>
           			   		</a>
@@ -167,15 +185,54 @@
 	
 		</div>
 
-	  </div><!-- /content -->
+	    <div data-role="popup" id="canyu" data-theme="a" class="ui-corner-all" data-overlay-theme="a" data-dismissible="false" style="width:240px;">
+			<a href="#" data-rel="back" data-role="button" data-theme="l" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+	        <form>
+	            <div style="padding:10px 20px;">
+	              <h3>报名：</h3>
+	              <label for="un" class="ui-hidden-accessible">stgrg</label>
+	              <input type="text" name="user" id="un" value="" placeholder="添加留言" data-theme="a">
+	              <label for="pw" class="ui-hidden-accessible">Password:</label>
+	              <input type="password" name="pass" id="pw" value="" placeholder="其他问题？" data-theme="a">
+	              <button type="submit" data-theme="l" data-icon="check">确定报名？</button>
+	            </div>
+	        </form>
+	    </div>
+		<div data-role="popup" id="more" data-theme="d" data-overlay-theme="a">
+		        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+		            <li data-role="divider" data-theme="l">更多操作</li>
+		            <li><a href="#">我有类似需求</a></li>
+		            <li><a href="#">分享到新浪微博</a></li>
+		            <li><a href="#">分享到QQ空间</a></li>
+		            <li><a href="#">分享到人人</a></li>
+
+		        </ul>
+		</div>
+		<div data-role="popup" id="zixun" data-theme="d" data-overlay-theme="a">
+		        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+		            <li data-role="divider" data-theme="l"><i class="icon-spinner icon-spin icon-large"></i>开发中</li>
+		            <p style="padding:10px;line-height:24px;">对不起，留言咨询功能正在开发中~</p>
+
+		        </ul>
+		</div>
+		<div data-role="popup" id="shoucang" data-theme="d" data-overlay-theme="a">
+		        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+		            <li data-role="divider" data-theme="l">已收藏</li>
+		            <p style="padding:10px;line-height:24px;"><i class="icon-ok-circle icon-3x"></i>&nbsp;&nbsp;您已经收藏该服务/需求。</p>
+
+		        </ul>
+		</div>
+	</div>
+	<!-- content -->
+
 
 	    <div data-role="footer" data-position="fixed">
 	        <div data-role="navbar">
 	            <ul>
-	                <li><a href="#faxian" data-icon="grid" class="ui-btn-active" data-toggle="tab">参与</a></li>
-	                <li><a href="#fujin" data-icon="star" data-toggle="tab">咨询</a></li>
-	                <li><a href="#shoucang" data-icon="gear"  data-toggle="tab">收藏</a></li>
-	                <li><a href="#shoucang" data-icon="gear"  data-toggle="tab">更多</a></li>
+	                <li><a href="#canyu" data-icon="legal"  data-rel="popup" data-transition="slideup" data-position-to="window">参与</a></li>
+	                <li><a href="#zixun" data-icon="chat"  data-rel="popup" data-transition="slideup" data-position-to="window">咨询</a></li>
+	                <li><a href="#shoucang" data-icon="star"   data-rel="popup" data-transition="slideup" data-position-to="window">收藏</a></li>
+	                <li><a href="#more" data-icon="info"  data-rel="popup" data-transition="slideup" data-position-to="window">更多</a></li>
 	            </ul>
 	        </div><!-- /navbar -->
 		</div><!-- /footer --> 

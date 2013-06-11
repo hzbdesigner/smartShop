@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- manifest="cache.manifest" -->
-<html manifest="cache.manifest" >
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,6 +40,9 @@
 	<link rel="stylesheet" href="front_assets/css/swatch_l.css">
 	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.structure.css">
 	<link rel="stylesheet" href="front_assets/tool/jquery.mobile.custom/jquery.mobile.custom.theme.css">
+	<!-- jqm extend icons -->
+	<link rel="stylesheet" href="front_assets/tool/jqm_icons/font-awesome/jqm-icon-pack-3.0.0-fa.css">
+	<link rel="stylesheet" href="front_assets/tool/jqm_icons/original/jqm-icon-pack-2.0-original.css">
 
 	<!-- icon css -->
 	<link rel="stylesheet" href="front_assets/tool/font-awesome/css/font-awesome.css">
@@ -70,7 +73,7 @@
 	      		<img  class="bg" src="front_assets/img_basic/me/me-slide-bg.jpg"  />
 	      		<div class="me-slide-content">
 	      			<div class="avatar setting">
-						<img  class="" src="front_assets/img_content/avatar/avatar3.jpg"  />
+						<img  class="" src="front_assets/img_content/avatar/avatar-me.jpg"  />
 					</div>
 				</div>
 
@@ -116,28 +119,33 @@
 		</div><!-- /footer --> 
 
 		    <div  data-role="panel" id="nav-panel" data-position="left" data-display="reveal" data-theme="c">
-		        <ul data-role="listview" data-inset="true" style="margin-top:-5px !important;margin-bottom:10px;" data-theme="a">
-		            <li><a href="me.html" data-transition="slide">
-		                <img  src="front_assets/img_content/avatar/avatar1.jpg" >
-		                <h2 style="margin-left:80px;">侯宗保</h2>
-		                <p style="margin-left:80px;"> 北京科技大学 &nbsp; 机械……</p></a>
-		            </li>
-		        </ul>
-		        <ul data-role="listview" data-theme="d" data-divider-theme="d"  data-global-nav="demos" class="jqm-list" style="margin-top:0px">
+				<div class="nav-me">
+					<img class="nav-me-bg" src="front_assets/img_basic/navigation/nav-me-bg.png" />
+			        <ul data-role="listview" data-inset="true" style="margin:15px;margin-bottom:0px;" data-theme="i">
+			            <li><a href="me.html" data-transition="slide" style="background:rgba(0,0,0,0.45) !important;" data-theme="a">
+			                <img  src="front_assets/img_content/avatar/avatar-me.jpg" >
+			                <h2 style="margin-left:80px;color:#fff;text-shadow:none;">侯宗保</h2>
+			                <p style="margin-left:80px;color:#fff;text-shadow:none;"> 北京科技大学 &nbsp; 机械……</p></a>
+			            </li>
+			        </ul>
+		        </div>
+		        <ul data-role="listview" data-theme="d" data-divider-theme="d"  data-global-nav="demos" class="jqm-list" style="margin-top:0px;">
 
 		            <li data-role="list-divider" class="nav-list-divider" data-theme="i">Center交易广场</li>
-					<li><a href="home.html" data-transition="slide" >发现</a></li>
-		            <li><a href="home.html" data-transition="slide">附近</a></li>
-		             <li><a href="home.html" data-transition="slide">收藏</a></li>
+					<li><a href="home.html" data-transition="slide" ><i class="icon-globe icon-grey"></i>发现</a></li>
+		            <li><a href="home.html" data-transition="slide"><i class="icon-map-marker icon-grey'"></i>附近</a></li>
+		             <li><a href="home.html" data-transition="slide"><i class="icon-star icon-grey"></i>收藏</a></li>
 		            <li data-role="list-divider" data-transition="slide" class="nav-list-divider" data-theme="i">Post发布信息</li>
-		            <li><a href="post.html" data-transition="slide">发布需求</a></li>
-		            <li><a href="post.html" data-transition="slide">出售服务</a></li>
+		            <li><a href="post.html" data-transition="slide"><i class="icon-pencil icon-grey"></i>发布需求</a></li>
+		            <li><a href="post.html" data-transition="slide"><i class="icon-money icon-grey"></i>出售服务</a></li>
 
 		        </ul>
-		        <div class="ui-grid-a" style="margin:-10px;margin-top:30px;">
-		            <div class="ui-block-a"><a type="submit" data-theme="l" href="notification.html" data-transition="slide" >消息<span class="badge" style="background: #fff;color:#aaa;">1</span></a></div>
-		            <div class="ui-block-b"><a type="submit" data-theme="g" href="setting.html" data-transition="slide" >设置</a></div>
-		        </div>
+
+		        	<div class="ui-grid-a" style="margin:-10px;margin-top:30px;">
+		        	    <div class="ui-block-a"><a type="submit" data-theme="l" href="notification.html" data-transition="slide" ><i class="icon-bell-alt"></i> &nbsp;消息</a></div>
+		        	    <div class="ui-block-b"><a type="submit" data-theme="g" href="setting.html" data-transition="slide" ><i class="icon-cog"></i> &nbsp;设置</a></div>
+		        	</div>
+
 			</div><!-- /panel -->
 	</div><!-- /page -->
 </body>
